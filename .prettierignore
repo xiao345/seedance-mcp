@@ -1,0 +1,7 @@
+node_modules/
+package-lock.json
+runs/
+coverage/
+docs/*local.md
+docs/implementation-plan.md
+docs/verification.md

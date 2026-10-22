@@ -1,0 +1,15 @@
+node_modules/
+.env
+.env.*
+!.env.example
+runs/
+coverage/
+*.mp4
+*.part
+*.tgz
+*.log
+.DS_Store
+# Local setup history is not part of the open-source distribution.
+docs/implementation-plan.md
+docs/verification.md
+docs/open-source-plan.local.md

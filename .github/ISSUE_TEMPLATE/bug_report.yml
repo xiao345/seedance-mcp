@@ -1,0 +1,25 @@
+name: Bug report
+description: Report a reproducible problem with the adapter
+body:
+  - type: markdown
+    attributes:
+      value: 'Do not include API keys, private paths, or task receipts. For vulnerabilities, read SECURITY.md.'
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, Node.js version, MCP client, and adapter commit/version
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Include the tool name, sanitized arguments, and expected versus actual behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: verification
+    attributes:
+      label: Verification output
+      description: Relevant sanitized npm test / npm run verify output

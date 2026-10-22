@@ -1,0 +1,53 @@
+{
+  "name": "seedance-mcp-server",
+  "version": "1.0.0",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node src/index.mjs",
+    "test": "node --test test/*.test.mjs",
+    "check": "node --check src/index.mjs && node --check src/api.mjs && node --check scripts/verify.mjs",
+    "verify": "node scripts/verify.mjs",
+    "verify:live": "node scripts/verify.mjs --live",
+    "verify:codex": "node scripts/verify.mjs --codex --live",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.1",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "prettier": "3.9.10"
+  },
+  "description": "Local stdio MCP server for Seedance-compatible video generation APIs.",
+  "license": "MIT",
+  "author": "xiao345",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiao345/seedance-mcp.git"
+  },
+  "homepage": "https://github.com/xiao345/seedance-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/xiao345/seedance-mcp/issues"
+  },
+  "keywords": [
+    "mcp",
+    "seedance",
+    "video-generation",
+    "codex",
+    "stdio"
+  ],
+  "bin": {
+    "seedance-mcp": "src/index.mjs"
+  },
+  "files": [
+    "src/",
+    "README.md",
+    "README.zh-CN.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ]
+}
