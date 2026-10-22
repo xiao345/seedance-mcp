@@ -1,0 +1,2 @@
+# Keep checkout contents consistent across Windows, macOS and Linux.
+* text=auto eol=lf
